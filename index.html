@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Find your next internship. Explore thoughtful opportunities from teams building what comes next.">
+  <title>Internship Board — Find your next beginning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to opportunities</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Firstlight home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span>firstlight<span class="brand-period">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-current" href="#opportunities" aria-current="page">Explore roles</a>
+      <a href="#about">How it works</a>
+    </nav>
+    <a class="header-cta" href="#opportunities">Find your start <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A little closer to what’s next</p>
+        <h1 id="hero-title">Your first step<br>starts <em>somewhere.</em></h1>
+        <p class="hero-description">Good work starts with a chance. Find an internship that makes room for your curiosity, your ideas, and your next big thing.</p>
+        <a class="hero-link" href="#opportunities">Explore open roles <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun-orb"></div>
+        <div class="art-spark spark-one">✳</div><div class="art-spark spark-two">✳</div>
+        <div class="art-caption"><span class="caption-rule"></span><span>Make room<br>for what’s next.</span></div>
+        <div class="art-number">01 <span>/ 04</span></div>
+        <svg class="hero-plant" viewBox="0 0 250 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M120 255C119 215 123 164 143 96" stroke="#294C38" stroke-width="3" stroke-linecap="round"/>
+          <path d="M125 213C98 190 81 167 68 135" stroke="#294C38" stroke-width="3" stroke-linecap="round"/>
+          <path d="M133 167C159 148 175 127 188 96" stroke="#294C38" stroke-width="3" stroke-linecap="round"/>
+          <path d="M140 112C121 76 129 43 159 25C173 56 170 87 140 112Z" fill="#779B74"/>
+          <path d="M71 144C38 131 23 104 33 75C62 88 79 111 71 144Z" fill="#9EB18A"/>
+          <path d="M183 108C181 75 198 52 228 47C226 78 210 101 183 108Z" fill="#C77952"/>
+          <path d="M125 216C89 215 67 235 66 266C99 260 119 244 125 216Z" fill="#B8A878"/>
+          <path d="M143 166C156 132 183 118 212 128C197 155 173 170 143 166Z" fill="#779B74"/>
+          <path d="M72 143C55 121 43 100 38 81M141 110C146 78 153 51 159 28M146 164C172 150 195 138 207 132M120 221C97 231 79 244 69 261" stroke="#294C38" stroke-width="2" stroke-linecap="round"/>
+          <path d="M105 250H159L153 291H111L105 250Z" fill="#D99570"/>
+          <path d="M101 247C101 244 104 242 107 242H158C161 242 164 244 164 247V253H101V247Z" fill="#B96F4B"/>
+          <path d="M112 267H152" stroke="#F1C4A5" stroke-width="2" opacity=".7"/>
+        </svg>
+        <div class="art-side-note">A good place to begin <span>✳</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 — THE OPPORTUNITY</span><span>Curious people welcome</span></div>
+    </section>
+
+    <section class="opportunities" id="opportunities" aria-labelledby="opportunities-title">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</p><h2 id="opportunities-title">A place to <em>begin.</em></h2></div>
+        <p class="section-intro">Small teams. Big ideas. Real work that matters.<br>Your next chapter is in here somewhere.</p>
+      </div>
+      <form class="filter-panel" id="filters" role="search">
+        <div class="search-wrap">
+          <label for="search" class="field-label">Search opportunities</label>
+          <span class="search-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4.3 4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <input id="search" name="search" type="search" placeholder="Role, company, or keyword" autocomplete="off">
+        </div>
+        <div class="domain-wrap">
+          <label for="domain" class="field-label">Your area of interest</label>
+          <select id="domain" name="domain"><option value="all">All areas</option></select>
+        </div>
+        <button class="reset-button" type="reset">Clear filters <span aria-hidden="true">↺</span></button>
+      </form>
+      <div class="results-bar"><p id="results-count" aria-live="polite" aria-atomic="true">Finding opportunities…</p><span class="results-note"><span class="status-dot"></span> Handpicked for your next step</span></div>
+      <div class="cards-grid" id="cards" aria-label="Internship opportunities"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="empty-icon" aria-hidden="true">✳</span><h3>No matches just yet.</h3>
+        <p>Try another search or clear your filters. The right thing has a way of showing up.</p>
+        <button class="text-button" id="empty-reset" type="button">See all opportunities <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="error-state" id="error-state" role="alert" hidden><span>Something interrupted the search.</span><button class="text-button" id="retry" type="button">Try again ↻</button></div>
+      <div class="section-footnote"><span>03 — OPEN DOORS</span><span>New opportunities, always.</span></div>
+    </section>
+
+    <section class="closing" id="about"><div class="closing-mark" aria-hidden="true">✳</div><p class="eyebrow">A NOTE FOR YOUR FIRST DAY</p><h2>You don’t need to have it<br><em>all figured out.</em></h2><p>Just bring your questions. We’ll meet you there.</p><a href="#opportunities" class="closing-link">Find a place to start <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>firstlight<span class="brand-period">.</span></span></a><span>Made for the beginnings that go somewhere.</span><a href="#top">Back to top ↑</a></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
